@@ -5,15 +5,19 @@
     margin:auto;
 }
 
+.section-aside {
+    width: 1300px;
+    display: flex;
+}
+
 /* 메인 안 리스트 크기 */
-.container-list {
+section {
     width: 1000px;
-    
 }
 
 /* 사이드 광고 크기 */
 aside {
-    width: 300px;
+    width: 150px;
 }
 
 /* 즐겨찾기 추가 버튼 */
@@ -36,7 +40,7 @@ aside {
 
 /* 사용자 이름 */
 .form, .greeting {
-    width:1000px;
+    width:1300px;
     padding-bottom:20px;
     display:none;
     text-align: center;
@@ -58,7 +62,7 @@ input:focus {
 }
 
 .showing {
-    width:1000px;
+    width:1300px;
     padding-bottom:20px;
     display: inline-block;
     text-align: center;
