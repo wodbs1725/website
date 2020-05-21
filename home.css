@@ -2,9 +2,33 @@ body {
     margin: 0px;
 }
 
+header button {
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+/* 즐겨찾기 추가 버튼 */
+.favWeb {
+    cursor: pointer;
+    background-color: #fff;
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+}
+
+/* 사용자 이름 지우는 버튼 */
+#removeName {
+    display:none;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
 /* 메인 전체 크기 */
 .lzMainContent {
-    padding-top: 30px;
+    padding-top: 10px;
     width: 1300px;
     margin:auto;
 }
@@ -26,25 +50,19 @@ aside {
     width: 150px;
 }
 
-/* 즐겨찾기 추가 버튼 */
-.favWeb {
-    cursor: pointer;
-    background-color: #fff;
-    font-weight: bold;
-    border: none;
-    display: inline-block;
+/* 날짜 */
+.date h4 {
+    padding-top: 0;
+    height: 10px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
-/* 사용자 이름 지우는 버튼 */
-#removeName {
-    display:none;
-    font-weight: bold;
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
+/* 시계 */
 .clock h1 {
+    height: 60px;
+    margin-top: 0;
+    margin-bottom: 20px;
     font-size: 4rem;
     text-align: center;
 }
@@ -52,6 +70,7 @@ aside {
 /* 사용자 이름 */
 .form, .greeting {
     width:1300px;
+    margin-top:10px;
     padding-bottom:20px;
     display:none;
     text-align: center;
