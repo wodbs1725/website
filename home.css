@@ -35,7 +35,7 @@ header button {
 
 /* 리스트, 사이드 총괄 */
 .section-aside {
-    width: 960px;
+    width: 1300px;
     display: flex;
 }
 
@@ -70,7 +70,7 @@ aside {
 
 /* 사용자 이름 */
 .form, .greeting {
-    width:1000px;
+    width:1300px;
     margin-top:10px;
     padding-bottom:20px;
     display:none;
@@ -91,7 +91,7 @@ input:focus {
     outline:none;
 }
 .showing {
-    width:1000px;
+    width:1300px;
     padding-bottom:20px;
     display: inline-block;
     text-align: center;
