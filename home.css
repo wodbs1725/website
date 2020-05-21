@@ -41,7 +41,6 @@ header button {
 
 /* 메인 안 리스트 크기 */
 section.container-list {
-    padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     width: 980px;
@@ -49,10 +48,10 @@ section.container-list {
 
 /* 사이드 광고 크기 */
 #aside-left {
-    width: 160px;
+    width: 190px;
 }
 #aside-right {
-    width: 180px;
+    width: 200px;
 }
 
 .date, .clock {
