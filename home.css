@@ -218,6 +218,10 @@ h2:hover, h3:hover {
     white-space: nowrap; */
 }
 
+#program {
+    border-bottom: 1px solid #ccc
+}
+
 /* 푸터 */
 #footer-inside {
     position:absolute;  
