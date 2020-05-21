@@ -42,7 +42,7 @@ header button {
 
 /* 메인 안 리스트 크기 */
 section.container-list {
-    padding-left: 20px;
+    padding-right: 10px;
     width: 820px;
 }
 
