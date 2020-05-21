@@ -29,34 +29,26 @@ header button {
 /* 메인 전체 크기 */
 .lzMainContent {
     padding-top: 10px;
-    width: 1400px;
-    margin-left:150px;
-    margin-right:150px;
+    width: 1300px;
+    margin:auto;
 }
 
 /* 리스트, 사이드 총괄 */
 .section-aside {
-    width: 1400px;
+    width: 1300px;
     display: flex;
 }
 
 /* 메인 안 리스트 크기 */
 section.container-list {
-    padding-right: 20px;
-    padding-bottom: 10px;
-    width: 1000px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 960px;
 }
 
 /* 사이드 광고 크기 */
-#aside-left {
-    width: 180px;
-}
-#aside-right {
-    width: 200px;
-}
-
-.date, .clock {
-    width: 1400px;
+aside {
+    width: 160px;
 }
 
 /* 날짜 */
@@ -78,7 +70,7 @@ section.container-list {
 
 /* 사용자 이름 */
 .form, .greeting {
-    width:1400px;
+    width:1300px;
     margin-top:10px;
     padding-bottom:20px;
     display:none;
@@ -99,7 +91,7 @@ input:focus {
     outline:none;
 }
 .showing {
-    width:1400px;
+    width:1300px;
     padding-bottom:20px;
     display: inline-block;
     text-align: center;
