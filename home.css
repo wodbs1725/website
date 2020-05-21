@@ -44,12 +44,12 @@ header button {
 section.container-list {
     padding-right: 20px;
     padding-left: 20px;
-    width: 1000px;
+    width: 940px;
 }
 
 /* 사이드 광고 크기 */
 aside {
-    width: 150px;
+    width: 160px;
 }
 
 /* 날짜 */
