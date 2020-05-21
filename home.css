@@ -29,21 +29,22 @@ header button {
 /* 메인 전체 크기 */
 .lzMainContent {
     padding-top: 10px;
-    width: 1000px;
+    width: 1300px;
     margin:auto;
 }
 
 /* 리스트, 사이드 총괄 */
 .section-aside {
-    width: 1000px;
+    width: 960px;
     display: flex;
     margin-bottom: 30px;
 }
 
 /* 메인 안 리스트 크기 */
 section.container-list {
+    padding-left: 10px;
     padding-right: 10px;
-    width: 820px;
+    width: 960px;
 }
 
 /* 사이드 광고 크기 */
