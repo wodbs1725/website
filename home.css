@@ -37,7 +37,6 @@ header button {
 .section-aside {
     width: 960px;
     display: flex;
-    margin-bottom: 30px;
 }
 
 /* 메인 안 리스트 크기 */
