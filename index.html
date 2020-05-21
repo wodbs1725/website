@@ -18,6 +18,9 @@
     <!-- 헤더 끝 -->
     <!-- 메인 시작 -->
     <main class='lzMainContent'>
+        <div class="clock">
+            <h1>00:00</h1>
+        </div>
         <form class='name-form form'>
             <h1>어서오세요, 성함이 어떻게 되십니까?</h1><input type='text'/>
             <h4>[ 즐겨찾기 기능을 사용하시려면 성함이나 별명을 적어주세요. ]</h4>
@@ -139,7 +142,7 @@
                                         <a href='https://twitter.com/explore' target='_blank'><img src='img\twitter.jpg'/></a><button class='favbtn' id='favbtn_020'><span class='image-text'>트위터</span></button>
                                     </li>
                                     <li>
-                                        <a href='https://www.instagram.com/' target='_blank'><img src='img\Instagram.jpg'/></a><button class='favbtn' id='favbtn_021'><span class='image-text'>인스타그램</span></button>
+                                        <a href='https://www.instagram.com/' target='_blank'><img src='img\instagram.jpg'/></a><button class='favbtn' id='favbtn_021'><span class='image-text'>인스타그램</span></button>
                                     </li>
                                     <li>
                                         <a href='https://cy.cyworld.com/cyMain' target='_blank'><img src='img\cyworld.jpg'/></a><button class='favbtn' id='favbtn_025'><span class='image-text'>싸이월드</span></button>
@@ -313,7 +316,7 @@
 
                     <article class='wrap-items' id='online-mall'>
                         <h2 class='big-title'>온라인 몰</h2>
-                        <ul class='big-title-content' style='display: none;'>
+                        <ul id='big-title-content' style='display: none;'>
                             <li><h3 class='list-title' id='online-shopping'>온라인 쇼핑</h3>
                                 <ul id='list-title-content' style='display:none'>
                                     <li>
@@ -498,7 +501,7 @@
 
                     <article class='wrap-items' id='TV'>
                         <h2 class='big-title'>방송 서비스 / 방송사</h2>
-                        <ul class='big-title-content' style='display: none;'>
+                        <ul id='big-title-content' style='display: none;'>
                             <li><h3 class='list-title' id='OTT'>방송 서비스</h3>
                                 <ul id='list-title-content' style='display:none'>
                                     <li>
@@ -753,10 +756,10 @@
                                     <a href='https://www.christiantoday.co.kr/' target='_blank'><img src='img\christian.jpg'/></a><button class='favbtn' id='favbtn_176'><span class='image-text'>크리스천투데이</span></button>
                                     </li>
                                     <li>
-                                        <a href='http://www.ibulgyo.com/' target='_blank'><img src='img\bulgyo.jpg'/></a><button class='favbtn' id='favbtn_177'><span class='image-text'>불교신문</span></button>
+                                    <a href='http://www.ibulgyo.com/' target='_blank'><img src='img\bulgyo.jpg'/></a><button class='favbtn' id='favbtn_177'><span class='image-text'>불교신문</span></button>
                                     </li>
                                     <li>
-                                        <a href='https://www.catholictimes.org/main/main.php' target='_blank'><img src='img\catholic.jpg'/></a><button class='favbtn' id='favbtn_178'><span class='image-text'>가톨릭신문</span></button>
+                                    <a href='https://www.catholictimes.org/main/main.php' target='_blank'><img src='img\catholic.jpg'/></a><button class='favbtn' id='favbtn_178'><span class='image-text'>가톨릭신문</span></button>
                                     </li>
                                 </ul>
                             </li>
@@ -932,7 +935,7 @@
                     
                     <article class='wrap-items' id='game'>
                         <h2 class='big-title'>게임 / 관련 사이트</h2>
-                        <ul class='big-title-content' style='display:none'>
+                        <ul id='big-title-content' style='display:none'>
                             <li><h3 class='list-title'>포털 사이트 및 플랫폼</h3>
                                 <ul id='list-title-content' style='display:none'>
                                     <li>
@@ -1098,7 +1101,7 @@
                             <li><h3 class='list-title'>항공사</h3>
                                 <ul id='list-title-content' style='display: none;'>
                                     <li>
-                                        <a href='https://www.koreanair.com/global/en.html' target='_blank'><img src='img\koreanair.jpg'/></a><button class='favbtn' id='favbtn_195'><span class='image-text'>대한항공</span></button>
+                                        <a href='https://www.koreanair.com/korea/ko.html' target='_blank'><img src='img\koreanair.jpg'/></a><button class='favbtn' id='favbtn_195'><span class='image-text'>대한항공</span></button>
                                         </li>
                                         <li>
                                         <a href='https://www.flyasiana.com/' target='_blank'><img src='img\flyasiana.jpg'/></a><button class='favbtn' id='favbtn_196'><span class='image-text'>아시아나항공</span></button>
@@ -1302,9 +1305,37 @@
     <!-- 메인 끝 -->
     <!-- 푸터 시작 -->
     <footer>
-        
+        <div id="footer-inside">
+            <span class="copyrights">
+                Copyrights 2020. https://link0.shop/. All rights reserved.
+                <br>
+                링크제로는 인터넷에 유포된 여러 웹사이트들의 링크를 수집하여 사용자분들이 쉽고 간편하게 원하는 사이트를 찾으실 수 있도록 카테고리별로 분류하여 모아두었습니다. 어떠한 파일도<br> 일절
+                저장하지 않으며 저작권 문제가 있는 링크 발생 혹은 발견 시 해당 사이트에 문의하시길 바랍니다. 링크에 문제가 발생하거나 폐쇄된 경우 최대한 빠르게 조치하겠습니다.
+            </span>
+        </div>
     </footer>
     <!-- 푸터 끝 -->
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://link0.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+    <script src='dateClock.js'></script>
     <script src='hideShow.js'></script>
     <script src='favorite.js'></script>
 </body>

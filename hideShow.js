@@ -3,10 +3,12 @@ function toggleBigtitle(event) {
 
         let next = event.target.nextElementSibling;
 
-        if (next.style.display == "none") {
-            next.style.display = "block";
+        if (next.style.display == 'none') {
+            next.className = 'show'
+            next.style.display = 'block';
         } else {
-            next.style.display = "none";
+            next.className = 'hide'
+            next.style.display = 'none';
         }
     }
 }
@@ -17,10 +19,12 @@ function toggleList(event) {
         
         let next = event.target.nextElementSibling;
 
-        if (next.style.display == "none") {
-            next.style.display = "block";
+        if (next.style.display == 'none') {
+            next.className = 'show'
+            next.style.display = 'block';
         } else {
-            next.style.display = "none";
+            next.className = 'hide'
+            next.style.display = 'none';
         }
     }
 }

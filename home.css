@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 /* 메인 전체 크기 */
 .lzMainContent {
     padding-top: 30px;
@@ -5,9 +9,11 @@
     margin:auto;
 }
 
+/* 리스트, 사이드 총괄 */
 .section-aside {
     width: 1300px;
     display: flex;
+    margin-bottom: 30px;
 }
 
 /* 메인 안 리스트 크기 */
@@ -38,6 +44,11 @@ aside {
     cursor: pointer;
 }
 
+.clock h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
 /* 사용자 이름 */
 .form, .greeting {
     width:1300px;
@@ -56,11 +67,9 @@ input {
     font-size: 200%;
     text-align: center;
 }
-
 input:focus {
     outline:none;
 }
-
 .showing {
     width:1300px;
     padding-bottom:20px;
@@ -68,8 +77,19 @@ input:focus {
     text-align: center;
 }
 
-/* 나중에 리스트 펼치고 닫을 때 애니메이션 넣자 */
+/* 리스트 열기 이펙트 */
 
+.show {
+    animation: fade-in 1s;
+}
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
 
 /* 링크 리스트 제목 마우스 올릴시 커서 모양 */
 .list-title, .big-title {
@@ -79,9 +99,6 @@ input:focus {
 /* 링크 리스트 외관 */
 ul {
     list-style: none;
-    font-weight: bold;
-    display: none;
-
 }
 
 /* 링크 이미지 */
@@ -148,34 +165,47 @@ h2:hover, h3:hover {
     color:#01A9DB
 }
 
+/* 큰 리스트 속 리스트들 정렬 */
+#big-title-content {
+    padding-left: 0px;
+}
+
 /* 링크 리스트 내용 총괄 */
 #list-title-content, #favlist-content {
     font-size: 0;
     padding-bottom: 10px;
+    padding-top: 5px;
 }
 
 /* 링크 리스트 속 칸 디자인 */
 #list-title-content li, #favlist-content li {
     position: relative;
-    display:inline-block;
+    display:inline-table;
     width: calc(95%/5);
-    margin: 1% 0 0 1%;
     text-align: center;
     font-size: 0.9rem;
-    /* font-weight: 500; */
-    box-sizing: border-box;
-    border-radius: 7px;
 }
 
 /* 링크 리스트 속 칸의 링크 디자인 */
 #list-title-content li a, #favlist-content li a {
     display: block;
-    padding: 0 5px;
-    box-sizing: border-box;
+    /* padding: 0 5px; */
+    /* box-sizing: border-box;
     background: #ffffff;
     border-radius: 5px;
     text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    white-space: nowrap; */
 }
 
+/* 푸터 */
+#footer-inside {
+    position:absolute;  
+    width:100%;  
+    text-align:center;   
+    height:90px;
+    line-height:30px;  /*  as the height  */
+    font-size: 0.7em;
+    font-weight: bold;
+    color: gray;
+    background-color: #DCDCDC;
+}
