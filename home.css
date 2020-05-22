@@ -28,7 +28,7 @@ header button {
 
 /* 메인 전체 크기 */
 .lzMainContent {
-    width: 1300px;
+    width: 1200px;
     margin:auto;
 }
 
@@ -40,9 +40,9 @@ header button {
 
 /* 메인 안 리스트 크기 */
 section.container-list {
-    padding-left: 10px;
+    padding-bottom: 10px;
     padding-right: 10px;
-    width: 960px;
+    width: 1030px;
 }
 
 /* 사이드 광고 크기 */
@@ -75,9 +75,10 @@ aside {
 
 /* 사용자 이름 */
 .form, .greeting {
-    width:1300px;
+    width:1200px;
     margin-top:10px;
-    padding-bottom:20px;
+    margin-bottom:0px;
+    padding-bottom:10px;
     display:none;
     text-align: center;
 }
@@ -96,8 +97,9 @@ input:focus {
     outline:none;
 }
 .showing {
-    width:1300px;
-    padding-bottom:20px;
+    width:1200px;
+    margin-bottom:0px;
+    padding-bottom:10px;
     display: inline-block;
     text-align: center;
 }
