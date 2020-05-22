@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!-- saved from url=(0197)https://ads-partners.coupang.com/widgets.html?id=243299&rUrl=https%3A%2F%2Fgithub.com%2Fwodbs1725%2Fwebsite%2Fsettings&pUrl=https%3A%2F%2Flink0.shop%2F&resolution=1920x1080#gid=243299-df8c8d5fdd51f -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Coupang Partners Carousel</title><script src="./main-0cbe3db7c2c25846e6c2.js.다운로드"></script><style type="text/css">html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;   
+}
+body {
+    background: #fff;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.container {
+    overflow: hidden;
+    position: relative;
+    width: 1px; min-width: 100%; /* https://stackoverflow.com/questions/23083462/how-to-get-an-iframe-to-be-responsive-in-ios-safari */
+    height: 100%;
+}
+
+.bordered {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.container[coupang="left"] .coupang {
+    float: left;
+    width: 120px;
+    height: 100%;
+    border-right: 1px solid #dbdbdb;
+}
+.container[coupang="left"] .carousel {
+    float: left;
+    width: calc(100% - 120px);
+    height: 100%;
+}
+
+.container[coupang="left"] .coupang .logo {
+    width: 90px;
+}
+.container[coupang="left"] .coupang .slogan {
+    display: none;
+}
+.container[coupang="left"] .coupang .go {
+    margin-top: 4px;
+    display: block;
+}
+
+.container[coupang="bottom"] .coupang {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    border-top: 1px solid #dbdbdb;
+}
+.container[coupang="bottom"] .carousel {
+    height: calc(100% - 30px);
+}
+
+.container[coupang="bottom"] .coupang .logo {
+    width: 70px;
+}
+.container[coupang="bottom"] .coupang .slogan {
+    margin-left: 4px;
+}
+.container[coupang="bottom"] .coupang .go {
+    margin-left: 4px;
+}
+@media(max-width:349px){
+    .container[coupang="bottom"] .coupang .go {
+        display: none;
+    }
+}
+@media(max-width:255px){
+    .container[coupang="bottom"] .coupang .slogan{
+        display: none;
+    }
+    .container[coupang="bottom"] .coupang .go {
+        display: inline-block;
+    }
+}
+@media(max-width:159px){
+    .container[coupang="bottom"] .coupang .slogan{
+        display: none;
+    }
+    .container[coupang="bottom"] .coupang .go {
+        display: none;
+    }
+}
+
+
+
+.coupang {
+    position: relative;
+}
+
+.coupang .coupang-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+}
+.coupang .coupang-inner .coupang-content {
+    display: inline-block;
+    text-decoration: none;
+}
+.coupang .logo {
+    border: 0 none;
+}
+.coupang .slogan {
+    line-height: 1;
+    color: #222;
+    white-space: nowrap;
+}
+.coupang .go{
+    display: inline-block;
+    height: 24px;
+    padding: 0 0 0 6px;
+    background: #0074e9;
+    border-radius: 2px;
+    line-height: 24px;
+    color: #fff;
+    
+}
+.coupang .go i{
+    display: inline-block;
+    line-height: 1;
+    font-size: 16px;
+}
+.coupang .go i svg{
+    vertical-align: top;
+}
+
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.track {
+    height: 100%;
+    position: relative;
+}
+
+.view {
+    display: inline-block;
+    height: 100%;
+}
+
+.arrow {
+    cursor: pointer;
+    z-index: 101;
+    position: absolute;
+    top: 50%;
+    display: none;
+    -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    background: rgba(0, 0, 0, 0.36);
+}
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.64);
+}
+
+
+.arrow.prev {
+    left: 0;
+}
+.arrow.next {
+    right: 0;
+}
+
+.arrow i {
+    position: relative;
+    display: inline-block;
+    margin: 16px 4px;
+    padding: 4px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+}
+.arrow i.prev {
+    left: 2px;
+    -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+}
+.arrow i.next {
+    left: -2px;
+    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+}
+.carousel:hover .arrow{
+    display: block;
+}
+.carousel[view-count="1"] .arrow, .carousel[view-count="0"] .arrow {
+    display: none !important;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.item {
+    cursor: pointer;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    border: 1px solid #eee;
+    text-align: center;
+    transition: border-color ease 200ms;
+}
+
+.item:hover{
+    border-color: #0074e9;
+}
+
+.item img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+
+.item .info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 4px;
+    background: rgba(0,0,0,0.36);
+    text-align: left;
+    color: #fff;
+    
+}
+
+.item .info span {
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+</style></head><body><div id="container" class="container" coupang="bottom" carousel="vertical"><div class="coupang">
+            <div class="coupang-inner">
+                <span onclick="window.open(&#39;https://link.coupang.com/re/AFFHOME?lptag=AF6704858&amp;traceid=V0-541-879dd1202e5c73b2-I243299&#39;, &#39;_blank&#39;)" class="clickable coupang-content">
+                    <img class="logo" src="./logo_coupang_w350.png">
+                    
+                    <span class="slogan">오늘주문!내일도착!로켓배송</span>
+                    
+                    <span class="go">
+                        <span>주문하기</span><i><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></i>
+                    </span>
+                </span>
+            </div>            
+        </div><div class="carousel" view-count="4"><div class="arrow prev"><i class="prev"></i></div><div class="arrow next"><i class="next"></i></div><div class="track" style="left: -480px; width: 640px;"><div class="view" index="1" style="width: 160px;"><span class="item" index="4" style="width: 160px; height: 180px;"><img src="./d381d75c-e7ff-4505-8b0b-519be5b63bd1.jpg" width="160" height="160"></span><span class="item" index="5" style="width: 160px; height: 180px;"><img src="./3904864d-d4b9-4909-8436-1e4591c5ec3c.jpg" width="160" height="160"></span><span class="item" index="6" style="width: 160px; height: 180px;"><img src="./e85b1ab7-b4e7-4749-b8e3-5de5231f7877.jpg" width="160" height="160"></span><span class="item" index="7" style="width: 160px; height: 180px;"><img src="./81545139168896-b536b14b-cceb-4231-97df-77b6f2b29113.jpg" width="160" height="160"></span></div><div class="view" index="2" style="width: 160px;"><span class="item" index="8" style="width: 160px; height: 180px;"><img src="./983df55e-e469-4890-b34e-1cd2eb506530.jpg" width="160" height="160"></span><span class="item" index="9" style="width: 160px; height: 180px;"><img src="./407c9438-5bcb-4162-8ce0-3db0341aa0ad.jpg" width="160" height="160"></span><span class="item" index="10" style="width: 160px; height: 180px;"><img src="./26025541784163-530cb5fc-be5f-424e-8fb4-b03d974efced.jpg" width="160" height="160"></span><span class="item" index="11" style="width: 160px; height: 180px;"><img src="./f36cd86299b6f6a5b5156ad692f8493f39d8a02a71c01497df6eac3fff46.jpg" width="160" height="160"></span></div><div class="view" index="3" style="width: 160px;"><span class="item" index="12" style="width: 160px; height: 180px;"><img src="./4957187494d016f4ed887a3a42ba8a6a8ed2490704d3f5400294b2d7116c.jpg" width="160" height="160"></span><span class="item" index="13" style="width: 160px; height: 180px;"><img src="./295449a5-cbb3-4554-8507-d7ff6dd6f457.jpg" width="160" height="160"></span><span class="item" index="14" style="width: 160px; height: 180px;"><img src="./532596701483765-b8bc93dd-0c8e-4f96-8872-fde70c1e4cd8.jpg" width="160" height="160"></span><span class="item" index="15" style="width: 160px; height: 180px;"><img src="./dd78a11e-5db0-a9b4-9790-736cb864fe1a.jpg" width="160" height="160"></span></div><div class="view current" index="0" style="width: 160px;"><span class="item" index="0" style="width: 160px; height: 180px;"><img src="./295449a5-cbb3-4554-8507-d7ff6dd6f457.jpg" width="160" height="160"></span><span class="item" index="1" style="width: 160px; height: 180px;"><img src="./532596701483765-b8bc93dd-0c8e-4f96-8872-fde70c1e4cd8.jpg" width="160" height="160"></span><span class="item" index="2" style="width: 160px; height: 180px;"><img src="./dd78a11e-5db0-a9b4-9790-736cb864fe1a.jpg" width="160" height="160"></span><span class="item" index="3" style="width: 160px; height: 180px;"><img src="./d0643edc-ca98-4d16-86e1-53b837a49cc4.jpg" width="160" height="160"></span></div></div></div></div><script>new PartnersCoupang.Carousel("#container", {"meta":{"traceId":"5abcf25b-c28c-46e8-93bb-6cf0f19a33c4","tt":1590123980712,"thumbnailBaseUrl":"//thumbnail12.coupangcdn.com/thumbnails/remote","widgetName":"carousel","trackingCode":"AF6704858","bordered":false,"pUrl":"https://link0.shop/","resolution":"1920x1080","homeUrl":"https://link.coupang.com/re/AFFHOME?lptag=AF6704858&traceid=V0-541-879dd1202e5c73b2-I243299","width":"160","datasetId":39,"id":243299,"height":"750"},"dataset":[{"itemId":2742763361,"image":"image/product/image/vendoritem/2018/10/22/3046762303/295449a5-cbb3-4554-8507-d7ff6dd6f457.jpg","link":"https://link.coupang.com/re/AFFSDP?lptag=AF6704858&subid=&pageKey=1605902435&itemId=2742763361&vendorItemId=3046762303&traceid=V0-141-05750f221edcfff9"},{"itemId":2327280883,"image":"image/retail/images/532596701483765-b8bc93dd-0c8e-4f96-8872-fde70c1e4cd8.jpg","link":"https://link.coupang.com/re/AFFSDP?lptag=AF6704858&subid=&pageKey=1310633841&itemId=2327280883&vendorItemId=70323868462&traceid=V0-141-822a373df6685f86"},{"itemId":2684435712,"image":"image/operator/2684435712/dd78a11e-5db0-a9b4-9790-736cb864fe1a.jpg","link":"https://link.coupang.com/re/AFFSDP?lptag=AF6704858&subid=&pageKey=1569907857&itemId=2684435712&vendorItemId=70674935977&traceid=V0-141-da9ad9f5cb03804d"},{"itemId":2742765784,"image":"image/retail/images/2020/02/21/18/2/d0643edc-ca98-4d16-86e1-53b837a49cc4.jpg","link":"https://link.coupang.com/re/AFFSDP?lptag=AF6704858&subid=&pageKey=1605903872&itemId=2742765784&vendorItemId=70332755259&traceid=V0-141-09b0ac72421924e4"},{"itemId":2457085349,"image":"image/retail/images/2020/03/31/15/0/d381d75c-e7ff-4505-8b0b-519be5b63bd1.jpg","link":"https://link.coupang.com/re/AFFSDP?lptag=AF6704858&subid=&pageKey=1419363551&itemId=2457085349&vendorItemId=70450620231&traceid=V0-141-dca196c4591f52f1"},{"itemId":2742782657,"image":"image/product/image/vendoritem/2017/07/31/3044133683/3904864d-d4b9-4909-8436-1e4591c5ec3c.jpg","link":"https://link.coupang.com/re/AFFSDP?lptag=AF6704858&subid=&pageKey=1605913957&itemId=2742782657&vendorItemId=3044133683&traceid=V0-141-308f67ba258ad962"},{"itemId":2742767934,"image":"image/retail/images/2019/06/07/20/0/e85b1ab7-b4e7-4749-b8e3-5de5231f7877.jpg","link":"https://link.coupang.com/re/AFFSDP?lptag=AF6704858&subid=&pageKey=1605905597&itemId=2742767934&vendorItemId=4899908475&traceid=V0-141-8a1b4b45bb6c65f3"},{"itemId":2742770444,"image":"image/retail/images/81545139168896-b536b14b-cceb-4231-97df-77b6f2b29113.jpg","link":"https://link.coupang.com/re/AFFSDP?lptag=AF6704858&subid=&pageKey=1605906890&itemId=2742770444&vendorItemId=5192078132&traceid=V0-141-c87e7580a679031a"},{"itemId":2441414294,"image":"image/retail/images/2020/03/26/18/9/983df55e-e469-4890-b34e-1cd2eb506530.jpg","link":"https://link.coupang.com/re/AFFSDP?lptag=AF6704858&subid=&pageKey=1405959609&itemId=2441414294&vendorItemId=70435188102&traceid=V0-141-b4ffff6e6340bf35"},{"itemId":2742776446,"image":"image/retail/images/2019/02/19/19/7/407c9438-5bcb-4162-8ce0-3db0341aa0ad.jpg","link":"https://link.coupang.com/re/AFFSDP?lptag=AF6704858&subid=&pageKey=1605910549&itemId=2742776446&vendorItemId=4417913858&traceid=V0-141-d3e3c46d237c225f"},{"itemId":2743809900,"image":"image/retail/images/26025541784163-530cb5fc-be5f-424e-8fb4-b03d974efced.jpg","link":"https://link.coupang.com/re/AFFSDP?lptag=AF6704858&subid=&pageKey=1606476700&itemId=2743809900&vendorItemId=4174366219&traceid=V0-141-63a0c838d1e56b41"},{"itemId":2577791636,"image":"image/vendor_inventory/43d0/f36cd86299b6f6a5b5156ad692f8493f39d8a02a71c01497df6eac3fff46.jpg","link":"https://link.coupang.com/re/AFFSDP?lptag=AF6704858&subid=&pageKey=1501401179&itemId=2577791636&vendorItemId=70570051042&traceid=V0-141-8e0dc2ad60a37fda"},{"itemId":1047270443,"image":"image/vendor_inventory/0eea/4957187494d016f4ed887a3a42ba8a6a8ed2490704d3f5400294b2d7116c.jpg","link":"https://link.coupang.com/re/AFFSDP?lptag=AF6704858&subid=&pageKey=327291570&itemId=1047270443&vendorItemId=70467090533&traceid=V0-141-c2a0f1059d25de7f"}]})</script></body></html>
