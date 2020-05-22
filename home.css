@@ -52,11 +52,12 @@ aside {
     width: 160px;
 }
 #aside-right {
-    position: relative;
+    position: absolute;
     float: right;
+    bottom:1px;
 }
 #aside-left {
-    position: relative;
+    position: absolute;
     float: left;
 }
 
