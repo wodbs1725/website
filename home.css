@@ -29,7 +29,6 @@ header button {
 /* 메인 전체 크기 */
 .lzMainContent {
     padding-top: 10px;
-    padding-bottom: 10px;
     width: 1300px;
     margin:auto;
 }
@@ -50,16 +49,6 @@ section.container-list {
 /* 사이드 광고 크기 */
 aside {
     width: 160px;
-}
-
-#kakaoads1, #kakaoads2 {
-    width:160px;
-    height:600px;
-}
-
-#coupangads1, #coupangads2 {
-    width:160px;
-    height:750px;
 }
 
 /* 날짜 */
