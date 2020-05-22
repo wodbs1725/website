@@ -1,5 +1,5 @@
 body {
-    margin: 0 auto;
+    margin: 0px;
 }
 
 header button {
@@ -28,32 +28,28 @@ header button {
 
 /* 메인 전체 크기 */
 .lzMainContent {
-    width: 1200px;
-    margin:auto;
+    padding-top: 10px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* 리스트, 사이드 총괄 */
 .section-aside {
-    width: 1300px;
-    display: -webkit-inline-box;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
 }
 
 /* 메인 안 리스트 크기 */
 section.container-list {
+    margin: 0 auto;
     padding-bottom: 10px;
-    padding-right: 10px;
-    width: 1030px;
+    width: 1040px;
 }
 
 /* 사이드 광고 크기 */
 aside {
     width: 160px;
-}
-#topAd {
-    width:728px;
-    height:90px;
-    margin:0 auto;
-    padding-bottom: 10px;
 }
 
 /* 날짜 */
@@ -67,6 +63,7 @@ aside {
 /* 시계 */
 .clock h1 {
     height: 60px;
+    margin: 0 auto;
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 4rem;
@@ -75,33 +72,35 @@ aside {
 
 /* 사용자 이름 */
 .form, .greeting {
-    width:1200px;
-    margin-top:10px;
-    margin-bottom:0px;
-    padding-bottom:10px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding-bottom:20px;
     display:none;
-    text-align: center;
+}
+.form h1 {
+    margin: 10px;
 }
 .form h2 {
-    text-align: center;
+    margin: 0 auto;
+}
+.form h4, .form h5{
+    margin: 10px;
 }
 input {
+    text-align:center;
     position:relative;
     border-width: 0 0 3px 0;
     border-color: black;
     font-weight: bold;
     font-size: 200%;
-    text-align: center;
 }
 input:focus {
     outline:none;
 }
 .showing {
-    width:1200px;
-    margin-bottom:0px;
-    padding-bottom:10px;
-    display: inline-block;
     text-align: center;
+    display: inline-block;
 }
 
 /* 리스트 열기 이펙트 */
@@ -230,7 +229,7 @@ h2:hover, h3:hover {
 
 /* 푸터 */
 #footer-inside {
-    position:absolute;  
+    position:relative;  
     width:100%;  
     text-align:center;   
     height:90px;
