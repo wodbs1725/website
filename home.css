@@ -47,9 +47,17 @@ section.container-list {
     width: 1040px;
 }
 
-/* 사이드 광고 크기 */
+/* 사이드 광고 */
 aside {
     width: 160px;
+}
+#aside-right {
+    position: relative;
+    float: right;
+}
+#aside-left {
+    position: relative;
+    float: left;
 }
 
 /* 날짜 */
