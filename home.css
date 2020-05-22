@@ -52,6 +52,16 @@ aside {
     width: 160px;
 }
 
+#kakaoads1, #kakaoads2 {
+    width:160px;
+    height:600px;
+}
+
+#coupangads1, #coupangads2 {
+    width:160px;
+    height:750px;
+}
+
 /* 날짜 */
 .date h4 {
     padding-top: 0;
