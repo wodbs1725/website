@@ -49,6 +49,11 @@ section.container-list {
 aside {
     width: 160px;
 }
+#topAd {
+    width:728px;
+    height:90px;
+    margin:0 auto;
+}
 
 /* 날짜 */
 .date h4 {
