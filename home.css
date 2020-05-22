@@ -29,6 +29,7 @@ header button {
 /* 메인 전체 크기 */
 .lzMainContent {
     padding-top: 10px;
+    padding-bottom: 10px;
     width: 1300px;
     margin:auto;
 }
