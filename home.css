@@ -52,13 +52,13 @@ aside {
     width: 160px;
 }
 #aside-right {
-    position: absolute;
-    float: right;
+    position: relative;
+    float: left;
     bottom:1px;
 }
 #aside-left {
-    position: absolute;
-    float: left;
+    position: relative;
+    float: right;
 }
 
 /* 날짜 */
