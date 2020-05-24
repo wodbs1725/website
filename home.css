@@ -2,18 +2,37 @@ body {
     margin: 0px;
 }
 
-header button {
-    padding-left: 10px;
-    padding-right: 0px;
+header {
+    overflow:hidden;
+    text-align:center;
+    position:relative;
+    width:100%;
+    height:auto;
 }
 
-/* 즐겨찾기 추가 버튼 */
-.favWeb {
+header button {
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+}
+
+/* 사용법 버튼 */
+#info {
     cursor: pointer;
     background-color: #fff;
     font-weight: bold;
     border: none;
     display: inline-block;
+}
+
+/* 북마크 전원 지우기 버튼 */
+#removebmk {
+    display:none;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 /* 사용자 이름 지우는 버튼 */
@@ -25,42 +44,64 @@ header button {
     cursor: pointer;
 }
 
+/* 웹사이트 즐겨찾기 추가 버튼*/
+#favWeb {
+    cursor: pointer;
+    background-color: #fff;
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+}
+#info:hover, #removebmk:hover, #removeName:hover, #favWeb:hover {
+    color: #01A9DB;
+}
+
+/* 검색 엔진 */ 
+.search-form {
+    padding-bottom: 10px;
+}
+.search-bar {
+    margin: 0 auto;
+    height:30px;
+    width: 500px;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+.search-txt {
+    box-sizing: border-box;
+    color: black;
+    border-width: 0;
+    border-color: black;
+    margin: 7px 10px 0 10px;
+    width:90%;
+}
 
 /* 메인 전체 크기 */
 .lzMainContent {
-    padding-top: 10px;
     width: 100%;
     margin: 0 auto;
 }
 
 /* 리스트, 사이드 총괄 */
 .section-aside {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     display: flex;
+    flex-flow: row;
+    padding-bottom: 10px;
 }
 
 /* 메인 안 리스트 크기 */
 section.container-list {
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    width: 1040px;
+    float:left;
+    width: 75%;
 }
 
-/* 사이드 광고 */
+/* 사이드 광고 크기 */
 aside {
-    width: 160px;
-}
-#aside-right {
-    position: relative;
-    float: left;
-    bottom:1px;
-}
-#aside-left {
-    position: relative;
-    float: right;
+    float:right;
+    width:300px;
 }
 
 /* 날짜 */
@@ -86,7 +127,7 @@ aside {
     width: 100%;
     margin: 0 auto;
     margin-top: 0px;
-    padding-bottom:20px;
+    padding-bottom:10px;
     display:none;
 }
 .form h1 {
@@ -98,7 +139,7 @@ aside {
 .form h4, .form h5{
     margin: 10px;
 }
-input {
+.askName {
     text-align:center;
     position:relative;
     border-width: 0 0 3px 0;
@@ -106,7 +147,7 @@ input {
     font-weight: bold;
     font-size: 200%;
 }
-input:focus {
+.askName:focus {
     outline:none;
 }
 .showing {
@@ -182,23 +223,27 @@ a {
 .wrap-items {
     position: relative;
     border-top: 1px solid #ccc;
-    padding-bottom:10px;
+    /* padding-bottom:10px; */
     letter-spacing: -0.5px;
     background: #fff;
 }
+/* 맨 마지막 리스트 밑줄*/
+#program {
+    border-bottom: 1px solid #ccc
+}
 
 /* 링크 리스트 제목 */
-h2 {
+.list-title {
     margin-top:20px;
     margin-bottom:10px;
     width: 300px;
 }
-h3 {
+#big-title-content .list-title {
     width: 300px;
     margin-top: 10px;
     margin-bottom: 0px;
 }
-h2:hover, h3:hover {
+.container-list h2:hover, .container-list h3:hover {
     color:#01A9DB
 }
 
@@ -234,8 +279,66 @@ h2:hover, h3:hover {
     white-space: nowrap; */
 }
 
-#program {
-    border-bottom: 1px solid #ccc
+/* 메모 */
+.list-box {
+    display:none;
+    width: 100%;
+    border: 3px solid black;
+    padding: 10px;
+}
+.list-box h3 {
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid #87898f;
+}
+.write-box {
+    margin: 0;
+    height: auto;
+}
+.write-box input {
+    width: 93%;
+    font-size: 14px;
+    border: 1px solid black;
+    padding: 0 10px;
+    height: 20px;
+}
+.list-table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid black;
+    font-size: 14px;
+}
+th{
+    border:none;
+}
+td {
+    padding: 0 5px 0 5px;
+    color:black;
+}
+tbody td:first-child {
+    text-align: center;
+}
+.memoBtns {
+    text-align: center;
+}
+.memoBtns button {
+    background: #a369af;
+    font-size: 12px;
+    cursor: pointer;
+    height: 20px;
+    font-weight:bold;
+    padding: 0 10px;
+    color: black;
+    border: 0;
+    border-radius: 10px;
+}
+.memoBtns button:focus {
+    outline:none;
 }
 
 /* 푸터 */

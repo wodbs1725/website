@@ -4,6 +4,7 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <script src="https://kit.fontawesome.com/30ab7dcb0e.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='home.css'>
     <link rel='icon' href='icon.ico'>
     <title>LinkZero</title>
@@ -12,8 +13,10 @@
 <body>
     <!-- 헤더 시작 -->
     <header>
-        <button class='favWeb' onclick='favWeb()'>즐겨찾기 추가</button>
+        <button id='info' onclick='info()'>사용법</button>
+        <button id='removebmk' onclick='removebmk()'>북마크 전부 삭제</button>
         <button id='removeName' onclick='removeName()'>이름 지우기</button>
+        <button id='favWeb' onclick='favWeb()'>즐겨찾기 추가</button>
     </header>
     <!-- 헤더 끝 -->
     <!-- 메인 시작 -->
@@ -25,28 +28,21 @@
             <h1>00:00</h1>
         </div>
         <form class='name-form form'>
-            <h1>어서오세요, 성함이 어떻게 되십니까?</h1><input type='text'/>
-            <h4>[ 즐겨찾기 기능을 사용하시려면 성함이나 별명을 적어주세요. ]</h4>
-            <h5>※위 정보들은 사용자님의 컴퓨터에 저장이 됩니다.※</h5>
+            <h1>어서오세요, 성함이 어떻게 되십니까?</h1><input class='askName' type='text'/>
+            <h4>[ 즐겨찾기 기능과 메모를 사용하시려면 성함이나 별명을 적어주세요. ]</h4>
+            <h5>※입력하시는 정보들은 사용자님의 컴퓨터에 저장이 됩니다.※</h5>
         </form>
         <h1 class='name-greeting greeting'></h1>
+        <form class='search-form' action='https://www.google.com/search' method='GET'>
+            <div class='mx-auto mt-5 search-bar input-group mb-3'>
+                <input name='q' type='text' class='search-txt' placeholder='검색 또는 URL 입력'>
+                <i class="fas fa-search"></i>
+            </div>
+        </form>
             <section class="section-aside">
-                <!-- 좌 사이드 시작 -->
-                <aside id='aside-left'>
-                    <script src="https://ads-partners.coupang.com/g.js"></script>
-                    <script>
-                        new PartnersCoupang.G({ id:243258 });
-                    </script>
-                    <ins class="kakao_ad_area" style="display:none;" 
-                    data-ad-unit    = "DAN-1h7wgojhgv9dl" 
-                    data-ad-width   = "160" 
-                    data-ad-height  = "600"></ins> 
-                    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-                </aside>
-                <!-- 좌 사이드 끝 -->
                 <section class='container-list'>
                     <article class='wrap-items' id='bookmarks' style='display:none'>
-                        <h2 class='list-title' id='bookmark'>즐겨찾기</h2>
+                        <h2 class='list-title' id='bookmark'>북마크</h2>
                         <ul id='favlist-content' style='display:none'></ul>
                     </article>
 
@@ -224,7 +220,9 @@
                                         <a href='http://www.pandora.tv/' target='_blank'><img src='img\pandoratv.jpg'/></a><button class='favbtn' id='favbtn_276'><span class='image-text'>판도라TV</span></button>
                                     </li>
                                 </ul>
-                            </li> 
+                            </li>
+
+                            
                         </ul>
                     </article>
 
@@ -511,7 +509,7 @@
                             </li>
                         </ul>
                     </article>
-                    
+
                     <article class='wrap-items' id='ott'>
                         <h2 class='list-title'>온라인 동영상 스트리밍</h2>
                         <ul id='list-title-content' style='display:none'>
@@ -948,6 +946,7 @@
                             </li>
                         </ul>
                     </article>
+                    
                     <article class='wrap-items' id='game'>
                         <h2 class='big-title'>게임 / 관련 사이트</h2>
                         <ul id='big-title-content' style='display:none'>
@@ -1333,6 +1332,7 @@
                             </li> 
                         </ul>
                     </article>
+
                     <article class='wrap-items' id='phoneInternet'>
                         <h2 class='big-title'>통신사 / 휴대폰 / 중고폰</h2>
                         <ul id='big-title-content' style='display:none'>
@@ -1521,12 +1521,30 @@
                 </section>
                 <!-- 우 사이드 시작 -->
                 <aside id='aside-right'>
-                    <ins class="kakao_ad_area" style="display:none;" 
-                    data-ad-unit    = "DAN-to2bhaletkqd" 
-                    data-ad-width   = "160" 
-                    data-ad-height  = "600"></ins> 
-                    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-                    <script>new PartnersCoupang.G({"id":243299,"subId":null});</script>
+                    <div class='list-box'>
+                        <h3>메모장</h3>
+                        <form class='write-box'>
+                            <input type='text' class='memo-text' placeholder='Ex) 3월 7일 은행 홈페이지 확인하기'/>
+                        </form>
+                        <table class='tablelist'>
+                            <thead>
+                                <colgroup>
+                                    <col width='9%'>
+                                    <col width='90%'>
+                                </colgroup>
+                                <tr>
+                                    <th>Check</th>
+                                    <th>메 모</th>
+                                </tr>
+                            </thead>
+                            <tbody id='mainList'>
+                            </tbody>
+                        </table>
+                        <div class='memoBtns'>
+                            <button type='button' id='selDelBtn'>선택 삭제</button>
+                            <button type='button' id='allDelBtn'>전체 삭제</button>
+                        </div>
+                    </div>
                 </aside>
                 <!-- 우 사이드 끝 -->
             </section>

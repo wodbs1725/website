@@ -48,7 +48,6 @@ function init() {
     date();
     time();
     setInterval(time, 1000);
-    setInterval(date, 3600*1000);
+    setInterval(date);
 }
-
 init();
