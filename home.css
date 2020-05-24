@@ -337,6 +337,10 @@ tbody td:first-child {
     outline:none;
 }
 
+#ads {
+    margin-top: 10px;
+}
+
 /* 푸터 */
 #footer-inside {
     position:relative;  
