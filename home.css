@@ -169,11 +169,6 @@ aside {
     }
 }
 
-/* 링크 리스트 제목 마우스 올릴시 커서 모양 */
-.list-title, .big-title {
-    cursor: pointer;
-}
-
 /* 링크 리스트 외관 */
 ul {
     list-style: none;
@@ -233,15 +228,16 @@ a {
 }
 
 /* 링크 리스트 제목 */
-.list-title {
-    margin-top:20px;
+.list-title, .big-title {
+    cursor: pointer;
+    margin-top:10px;
     margin-bottom:10px;
-    width: 300px;
+}
+.list-title, .big-title {
+    width: auto;
 }
 #big-title-content .list-title {
-    width: 300px;
-    margin-top: 10px;
-    margin-bottom: 0px;
+    width: auto;
 }
 .container-list h2:hover, .container-list h3:hover {
     color:#01A9DB
