@@ -82,6 +82,11 @@ header button {
     margin: 0 auto;
 }
 
+.topad {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 /* 리스트, 사이드 총괄 */
 .section-aside {
     width: 75%;
