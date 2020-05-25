@@ -17,7 +17,6 @@ header button {
     font-size:17px;
 }
 
-/* 사용법 버튼 */
 #info {
     cursor: pointer;
     background-color: #fff;
@@ -26,7 +25,7 @@ header button {
     display: inline-block;
 }
 
-/* 북마크 전원 지우기 버튼 */
+/* erase all bmk button */
 #removebmk {
     display:none;
     font-weight: bold;
@@ -35,7 +34,7 @@ header button {
     cursor: pointer;
 }
 
-/* 사용자 이름 지우는 버튼 */
+/* erase user name button */
 #removeName {
     display:none;
     font-weight: bold;
@@ -44,7 +43,6 @@ header button {
     cursor: pointer;
 }
 
-/* 웹사이트 즐겨찾기 추가 버튼*/
 #favWeb {
     cursor: pointer;
     background-color: #fff;
@@ -56,7 +54,7 @@ header button {
     color: #01A9DB;
 }
 
-/* 검색 엔진 */ 
+/* search bar */ 
 .search-form {
     padding-bottom: 10px;
 }
@@ -76,7 +74,7 @@ header button {
     width:90%;
 }
 
-/* 메인 전체 크기 */
+/* whole contents */
 .lzMainContent {
     width: 100%;
     margin: 0 auto;
@@ -89,7 +87,7 @@ header button {
     margin-bottom: 5px;
 }
 
-/* 리스트, 사이드 총괄 */
+/* list + aside */
 .section-aside {
     width: 75%;
     margin: 0 auto;
@@ -98,13 +96,13 @@ header button {
     padding-bottom: 10px;
 }
 
-/* 메인 안 리스트 크기 */
+/* list inside main */
 section.container-list {
     margin: 0 auto;
     width: 100%;
 }
 
-/* 사이드 광고 크기 */
+/* aside */
 aside {
     width:300px;
 }
@@ -112,7 +110,7 @@ aside {
     margin-left: 5px;
 }
 
-/* 날짜 */
+/* date */
 .date h4 {
     padding-top: 0;
     height: 10px;
@@ -120,7 +118,7 @@ aside {
     text-align: center;
 }
 
-/* 시계 */
+/* clock */
 .clock h1 {
     height: 60px;
     margin: 0 auto;
@@ -130,7 +128,7 @@ aside {
     text-align: center;
 }
 
-/* 사용자 이름 */
+/* username */
 .form, .greeting {
     width: 100%;
     margin: 0 auto;
@@ -163,7 +161,7 @@ aside {
     display: inline-block;
 }
 
-/* 리스트 열기 이펙트 */
+/* click list effect */
 
 .show {
     animation: fade-in 1s;
@@ -177,12 +175,15 @@ aside {
     }
 }
 
-/* 링크 리스트 외관 */
+/* link */
 ul {
     list-style: none;
 }
-
-/* 링크 이미지 */
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
 li img {
     display:inline-block;
     padding-top:10px;
@@ -190,22 +191,13 @@ li img {
     width:70%;
     height:50px;
 }
-
-/* 링크 이미지 및 텍스트 */
 .image-text {
     width:auto;
     display:block;
     font-weight: bold;
 }
 
-/* 링크 */
-a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-}
-
-/* 좋아요 버튼 */
+/* add bmk button */
 .favbtn{
     width:auto;
     padding: 0;
@@ -222,7 +214,7 @@ a {
     color:#01A9DB
 }
 
-/* 링크 리스트 */
+/* link list */
 .wrap-items {
     position: relative;
     border-top: 1px solid #ccc;
@@ -230,12 +222,12 @@ a {
     letter-spacing: -0.5px;
     background: #fff;
 }
-/* 맨 마지막 리스트 밑줄*/
+/* last link list underbar*/
 #program {
     border-bottom: 1px solid #ccc
 }
 
-/* 링크 리스트 제목 */
+/* link list names*/
 .list-title, .big-title {
     cursor: pointer;
     margin-top:10px;
@@ -251,19 +243,19 @@ a {
     color:#01A9DB
 }
 
-/* 큰 리스트 속 리스트들 정렬 */
+/* big list contents*/
 #big-title-content {
     padding-left: 0px;
 }
 
-/* 링크 리스트 내용 총괄 */
+/* link list content */
 #list-title-content, #favlist-content {
     font-size: 0;
     padding-bottom: 10px;
     padding-top: 5px;
 }
 
-/* 링크 리스트 속 칸 디자인 */
+/* link list's box */
 #list-title-content li, #favlist-content li {
     position: relative;
     display:inline-table;
@@ -272,18 +264,12 @@ a {
     font-size: 0.9rem;
 }
 
-/* 링크 리스트 속 칸의 링크 디자인 */
+/* link lits's box link */
 #list-title-content li a, #favlist-content li a {
     display: block;
-    /* padding: 0 5px; */
-    /* box-sizing: border-box;
-    background: #ffffff;
-    border-radius: 5px;
-    text-overflow: ellipsis;
-    white-space: nowrap; */
 }
 
-/* 메모 */
+/* memo */
 .memo {
     display:none;
     width: 274px;
@@ -349,13 +335,13 @@ tbody td:first-child {
     margin-top: 5px;
 }
 
-/* 푸터 */
+/* footer */
 #footer-inside {
     position:relative;  
     width:100%;  
     text-align:center;   
     height:100%;
-    line-height:30px;  /*  as the height  */
+    line-height:30px; 
     font-size: 0.7em;
     font-weight: bold;
     color: gray;

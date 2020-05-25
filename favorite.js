@@ -17,11 +17,11 @@ const form = document.querySelector('.name-form'),
     SHOW_CU = 'showing',
     USER_FAV = 'currentFav',
     USER_MEMO = 'currentMemo';
-// 메모 버튼  기능//
+// memo buttons //
 document.getElementById('allDelBtn').addEventListener('click', delAllEle);
 document.getElementById('selDelBtn').addEventListener('click', delSelected);
 
-// 상단 버튼 기능 //
+// header buttons //
 function info() {
   alert('로고를 클릭하면 해당 사이트로 이동하고 이름을 클릭하시면 북마크에 등록이 됩니다. 지우고 싶은 북마크는 해당 링크의 이름을 다시 눌러 지울 수 있습니다.');
 }
@@ -37,7 +37,7 @@ function favWeb() {
   alert('Ctrl + D를 눌러 이 웹사이트를 즐겨찾기에 추가하실 수 있습니다');
 }
 
-// 즐겨찾기에서 삭제 //
+// erase bmk //
 function eraseBmks() {
   let eraseBtn = favul.querySelectorAll('button[class^=favbtn]');
   for (let j = 0; j < eraseBtn.length; j += 1) {
@@ -45,13 +45,12 @@ function eraseBmks() {
       let eraseclicked = this.parentElement;
       eraseclicked.remove();
       let favul = document.getElementById('favlist-content')
-      // console.log(favul);
       localStorage.setItem(USER_FAV, eval(JSON.stringify(favul.innerHTML)));
       });
   }
 }
 
-// 즐겨찾기 추가 및 제거 //
+// add bmk //
 for (let i = 0; i < allButtons.length; i += 1) {
     allButtons[i].addEventListener('click', function() {
         let clicklink = this.parentElement,
@@ -70,7 +69,7 @@ for (let i = 0; i < allButtons.length; i += 1) {
     });  
 }
 
-// 메모 제거 //
+// erase memo //
 function delSelected() {
   const body = document.getElementById('mainList');
   var chkbox = document.querySelectorAll('#mainList .btn-chk');
@@ -93,7 +92,7 @@ function delAllEle() {
   }
 }
 
-// 메모 추가 //
+// add memo //
 function addMemo() {
   event.preventDefault();
   if (!memoInput.value) {
@@ -122,21 +121,21 @@ function addMemo() {
   localStorage.setItem(USER_MEMO, memoParent);
 }
 
-// 메모 불러오기 //
+// load memo //
 function loadMemo() {
     let memoLists = localStorage.getItem(USER_MEMO)
     memocontents.innerHTML = memoLists;
     memoForm.addEventListener('submit', addMemo);
 }
 
-// 즐겨찾기 불러오기 //
+// load bmk //
 function loadFav() {
     let favlists = localStorage.getItem(USER_FAV);
     favul.innerHTML = favlists;
     eraseBmks();
 }
 
-// 사용자 이름 가져오기 //
+// load user name //
 function greetingUser(text) {
   form.classList.remove(SHOW_CU);
   greeting.classList.add(SHOW_CU);
@@ -149,12 +148,12 @@ function greetingUser(text) {
   loadMemo();
 }
 
-// 이름 저장 //
+// save name //
 function saveName(text) {
   localStorage.setItem(USER_NAME, text);
 }
 
-// 이름 입력 //
+// submit name //
 function handleName() {
   event.preventDefault();
   const currentValue = input.value;
@@ -162,13 +161,13 @@ function handleName() {
   saveName(currentValue);
 }
 
-// 이름 묻기 //
+// ask name //
 function askUserName() {
   form.classList.add(SHOW_CU);
   form.addEventListener('submit', handleName);
 }
 
-// 정보 불러오기 //
+// load info //
 function loadInfo() {
   const currentUser = localStorage.getItem(USER_NAME);
   if(currentUser === null){
@@ -178,7 +177,7 @@ function loadInfo() {
   }
 }
 
-// 실행 //
+// init //
 function init() {
   loadInfo();
 }
