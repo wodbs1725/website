@@ -347,3 +347,18 @@ tbody td:first-child {
     color: gray;
     background-color: #DCDCDC;
 }
+
+@media only screen and (max-width:850px) {
+    .section-aside {
+        display:grid;
+    }
+    #aside-right {
+        margin:0 auto;
+    }
+    .search-bar {
+        width:300px;
+    }
+    .search-txt {
+        width:83%;
+    }
+}
