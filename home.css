@@ -353,7 +353,7 @@ tbody td:first-child {
     position:relative;  
     width:100%;  
     text-align:center;   
-    height:90px;
+    height:100%;
     line-height:30px;  /*  as the height  */
     font-size: 0.7em;
     font-weight: bold;
