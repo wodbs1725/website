@@ -83,6 +83,7 @@ header button {
 }
 
 .topad {
+    width:100%;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -100,8 +101,7 @@ header button {
 /* 메인 안 리스트 크기 */
 section.container-list {
     margin: 0 auto;
-    float:left;
-    width: 75%;
+    width: 100%;
 }
 
 /* 사이드 광고 크기 */
