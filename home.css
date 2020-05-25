@@ -100,8 +100,10 @@ section.container-list {
 
 /* 사이드 광고 크기 */
 aside {
-    float:right;
     width:300px;
+}
+#aside-right {
+    margin-left: 5px;
 }
 
 /* 날짜 */
@@ -338,7 +340,7 @@ tbody td:first-child {
 }
 
 .ads {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 /* 푸터 */
