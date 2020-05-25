@@ -26,31 +26,21 @@ header button {
 }
 
 /* erase all bmk button */
-#removebmk {
-    display:none;
-    font-weight: bold;
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-/* erase user name button */
-#removeName {
-    display:none;
-    font-weight: bold;
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-#favWeb {
+#info, #favWeb, #discuss, #gohome {
     cursor: pointer;
     background-color: #fff;
     font-weight: bold;
     border: none;
     display: inline-block;
 }
-#info:hover, #removebmk:hover, #removeName:hover, #favWeb:hover {
+#removebmk, #removeName {
+    display:none;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+header button:hover {
     color: #01A9DB;
 }
 
