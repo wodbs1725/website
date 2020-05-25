@@ -377,4 +377,7 @@ tbody td:first-child {
         width:400px;
         margin:0 auto;
     }
+    #list-title-content {
+        padding-left:0px;
+    }
 }
