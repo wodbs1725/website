@@ -41,7 +41,7 @@ function favWeb() {
 function eraseBmks() {
   let eraseBtn = favul.querySelectorAll('button[class^=favbtn]');
   for (let j = 0; j < eraseBtn.length; j += 1) {
-      eraseBtn[j].addEventListener('click', function(event) {
+      eraseBtn[j].addEventListener('dblclick', function(event) {
       let eraseclicked = this.parentElement;
       eraseclicked.remove();
       let favul = document.getElementById('favlist-content')
@@ -52,7 +52,7 @@ function eraseBmks() {
 
 // add bmk //
 for (let i = 0; i < allButtons.length; i += 1) {
-    allButtons[i].addEventListener('click', function() {
+    allButtons[i].addEventListener('dblclick', function() {
         let clicklink = this.parentElement,
             cloneli = clicklink.cloneNode(true);
         // console.log('you clicked:', clicklink.parentElement, 'you clicked:', favul);
