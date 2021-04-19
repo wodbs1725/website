@@ -23,7 +23,7 @@ document.getElementById('selDelBtn').addEventListener('click', delSelected);
 
 // header buttons //
 function info() {
-  alert('로고를 클릭하면 해당 사이트로 이동하고 이름을 클릭하시면 북마크에 등록이 됩니다. 지우고 싶은 북마크는 해당 링크의 이름을 다시 눌러 지울 수 있습니다.');
+  alert('로고를 클릭하면 해당 사이트로 이동하고 이름을 더블 클릭하시면 북마크에 등록이 됩니다. 지우고 싶은 북마크는 해당 링크의 이름을 다시 더블 클릭하여 지울 수 있습니다.');
 }
 function removebmk() {
   localStorage.removeItem(USER_FAV);
