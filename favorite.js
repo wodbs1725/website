@@ -57,7 +57,7 @@ for (let i = 0; i < allButtons.length; i += 1) {
             cloneli = clicklink.cloneNode(true);
         // console.log('you clicked:', clicklink.parentElement, 'you clicked:', favul);
         // 즐겨찾기에 클릭한 링크가 있으면 경고 //
-        if ((favul.innerText).indexOf(clicklink.innerText) > -1) {
+        if ((favul.innerHTML).indexOf(clicklink.innerHTML) > -1) {
         alert('이미 즐겨찾기에 추가된 링크입니다');
         // 즐겨찾기에 클릭한 링크가 없으면 링크 추가 //
         } else {
